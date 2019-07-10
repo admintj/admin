@@ -35,21 +35,53 @@
 		.listBox {
 			font-family: 'Pacifico-Regular';
 			text-align: center;
-			font-size: 12pt;
+			font-size: 17pt;
 			margin-top: 20px;
 			margin-left: 3%;
 			margin-right: 3%;
 			width: auto;
 			height: 60px;
-			border: 1px solid rgba(255,255,255);
-			background-color: white;
+
+
 		}
 
+		.header {
+			table-layout: fixed;
+			width: 100%;
+			height: 30px;
+			text-align: center;
+		}
+
+		.headTag {
+			text-decoration-line: none;
+			color: black;
+		}
+
+		table.header tr td:hover{
+			font-size: 23pt;
+		}
+		td{
+			padding: 10px 0;
+		}
 	</style>
 </head>
 
 <body>
 	<div class="listBox">
+		<header>
+			<nav>
+				<table class="header" border="1">
+					<tr>
+						<td><a href="https://www.naver.com" class="headTag">About</a></td>
+						<td><a href="https://www.naver.com" class="headTag">School</a></td>
+						<td><a href="https://www.naver.com" class="headTag">Notice</a></td>
+						<td><a href="https://www.naver.com" class="headTag">Tips</a></td>
+						<td><a href="https://www.naver.com" class="headTag">KnowHow</a></td>
+						<td><a href="https://www.naver.com" class="headTag">Devs</a></td>
+					</tr>
+				</table>
+			</nav>
+		</header>
 	</div>
 	<p class="maintxt">Hello</p>
 </body>

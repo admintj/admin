@@ -11,6 +11,16 @@
 			src: url(font/Pacifico-Regular.ttf) format('truetype'); 
 		}
 
+		@font-face {
+			font-family: 'NaNumRegular';
+			src: url(font/NaNumRegular.ttf) format('truetype');
+		}
+
+		@font-face {
+			font-family: 'NaNumLight';
+			src: url(font/NaNumLight.ttf) format('truetype');
+		}
+
 		body {
 			background-image: url('image/main/main_bg.jpg');
 			background-repeat: no-repeat;
@@ -20,14 +30,12 @@
 		}
 
 		.maintxt {
-			font-family: 'Pacifico-Regular';
+			font-family: 'NaNumRegular';
 			color: white;
-			font-size: 70pt;
-			text-align: center;
-			border: 2px solid;
-			background-color: rgba(0,0,0,0.4);
-			margin-left: 20%;
-			margin-right: 20%;
+			font-size: 60pt;
+			text-align: left;
+			margin-left: 4%;
+			margin-top: 80px;
 		}
 
 		.listBox {
@@ -57,7 +65,9 @@
 		td:hover{
 			font-size: 24pt;
 		}
+		h1{
 
+		}
 	</style>
 </head>
 
@@ -79,6 +89,10 @@
 		</header>
 	</div>
 
-	<p class="maintxt">Hello</p>
+	<div class="maintxt">
+		<h1 style="font-size: 80pt;">탕정중학교</h1>
+		<h1 style="font-size: 80pt;font-family: 'NaNumLight';">언제나</h1>
+		<h1 style="font-size: 80pt;font-family: 'NaNumLight';">옆에</h1>
+	</div>
 </body>
 </html>

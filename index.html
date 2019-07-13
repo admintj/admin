@@ -4,38 +4,48 @@
 	<meta charset="utf-8">
 	<title>NEWBIES!</title>
 	<link rel="shortcut icon" href="image/title/icon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<style type="text/css">
-
-		@font-face { 
-			font-family: 'Pacifico-Regular'; 
-			src: url(font/Pacifico-Regular.ttf) format('truetype'); 
-		}
-
-		@font-face {
-			font-family: 'NaNumRegular';
-			src: url(font/NaNumRegular.ttf) format('truetype');
-		}
 
 		@font-face {
 			font-family: 'NaNumLight';
 			src: url(font/NaNumLight.ttf) format('truetype');
 		}
 
+		@font-face { 
+			font-family: 'Pacifico-Regular'; 
+			src: url(font/Pacifico-Regular.ttf) format('truetype'); 
+		}
+
+		@font-face { 
+			font-family: 'Genome-Thin'; 
+			src: url(font/Genome-Thin.otf) format('truetype'); 
+		}
+
 		body {
 			background-image: url('image/main/main_bg.jpg');
 			background-repeat: no-repeat;
 			background-size: 100%;
-			background-position: middle;
+			background-position: top;
 			overflow: hidden;
 		}
 
-		.maintxt {
-			font-family: 'NaNumRegular';
-			color: white;
-			font-size: 60pt;
+		.maintxt1 {
+			font-family: 'Genome-Thin';
+			color: black;
+			font-size: 130pt;
 			text-align: left;
-			margin-left: 4%;
-			margin-top: 80px;
+			margin-left: 40px;
+			margin-top: 70px;
+		}
+
+		.maintxt2 {
+			font-family: 'NaNumLight';
+			color: black;
+			font-size: 110pt;
+			text-align: left;
+			margin-left: 100px;
+			margin-top: 40px;
 		}
 
 		.listBox {
@@ -58,16 +68,14 @@
 		}
 
 		.headTag {
-			text-decoration-line: none;
-			color: black;
+			text-decoration-line: none !important;
+			color: black !important;
 		}
 
 		td:hover{
 			font-size: 24pt;
 		}
-		h1{
 
-		}
 	</style>
 </head>
 
@@ -77,22 +85,40 @@
 			<nav>
 				<table class="header">
 					<tr>
-						<td height="60"><a href="https://www.naver.com" class="headTag">About</a></td>
-						<td>			<a href="https://www.naver.com" class="headTag">School</a></td>
-						<td>			<a href="https://www.naver.com" class="headTag">Notice</a></td>
-						<td>			<a href="https://www.naver.com" class="headTag">Tips</a></td>
-						<td>			<a href="https://www.naver.com" class="headTag">KnowHow</a></td>
-						<td>			<a href="https://www.naver.com" class="headTag">Devs</a></td>
+						<td height="60"><a href="#" class="headTag" onclick="topclick();">About</a></td>
+						<td>			<a href="#" class="headTag" onclick="topclick();">School</a></td>
+						<td>			<a href="#" class="headTag" onclick="topclick();">Notice</a></td>
+						<td>			<a href="#" class="headTag" onclick="topclick();">Tips</a></td>
+						<td>			<a href="#" class="headTag" onclick="topclick();">KnowHow</a></td>
+						<td>			<a href="#" class="headTag" onclick="topclick();">Devs</a></td>
 					</tr>
 				</table>
 			</nav>
 		</header>
 	</div>
 
-	<div class="maintxt">
-		<h1 style="font-size: 80pt;">탕정중학교</h1>
-		<h1 style="font-size: 80pt;font-family: 'NaNumLight';">언제나</h1>
-		<h1 style="font-size: 80pt;font-family: 'NaNumLight';">옆에</h1>
+	<div>
+		<p class="maintxt1">| WE CREATE</p>
+		<p class="maintxt2">온라인에서</p>
 	</div>
+
+	<button type="button" onclick="button1_click();" class="btn btn-success" style="font-family:'Genome-Thin';font-size:30pt;margin-left:150px;margin-top: 80px;">Learn More</button>
+	<script type="text/javascript">
+		function button1_click()
+		{
+			alert("아직 준비되지 않은 기능입니다")
+			var easter = prompt("코드 입력 : ")
+			if(easter = "sww")
+			{
+				alert("이스터에그를 발견하셨습니다!")
+				location.href="https://www.nbg.kro.kr"
+			}
+		}
+
+		function topclick()
+		{
+			alert("아직 준비되지 않은 기능입니다")
+		}
+	</script>
 </body>
 </html>

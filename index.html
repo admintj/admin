@@ -2,9 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<!--제목-->
 	<title>NEWBIES!</title>
+	<!--웹 로고-->
 	<link rel="shortcut icon" href="image/title/icon.ico">
+	<!--부트스트랩-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--CSS-->
 	<style type="text/css">
 
 		@font-face {
@@ -22,6 +26,11 @@
 			src: url(font/Genome-Thin.otf) format('truetype'); 
 		}
 
+		@font-face { 
+			font-family: 'NaNumDef'; 
+			src: url(../font/NaNumDef.ttf) format('truetype'); 
+		}
+		
 		body {
 			background-image: url('image/main/main_bg.jpg');
 			background-repeat: no-repeat;
@@ -57,8 +66,6 @@
 			margin-right: 3%;
 			width: auto;
 			height: 60px;
-
-
 		}
 
 		.header {
@@ -75,7 +82,6 @@
 		td:hover{
 			font-size: 24pt;
 		}
-
 	</style>
 </head>
 
@@ -89,8 +95,8 @@
 						<td>			<a href="#" class="headTag" onclick="topclick();">School</a></td>
 						<td>			<a href="#" class="headTag" onclick="topclick();">Notice</a></td>
 						<td>			<a href="#" class="headTag" onclick="topclick();">Tips</a></td>
-						<td>			<a href="#" class="headTag" onclick="topclick();">KnowHow</a></td>
 						<td>			<a href="#" class="headTag" onclick="topclick();">Devs</a></td>
+						<td>			<button type="button" onclick="login_click();" class="btn btn-warning" style="font-family:'Genome-Thin';font-size:20pt;">Login</button></td>
 					</tr>
 				</table>
 			</nav>
@@ -102,22 +108,37 @@
 		<p class="maintxt2">온라인에서</p>
 	</div>
 
-	<button type="button" onclick="button1_click();" class="btn btn-success" style="font-family:'Genome-Thin';font-size:30pt;margin-left:150px;margin-top: 80px;">Learn More</button>
+	<button type="button" onclick="showMore_click();" class="btn btn-success" style="font-family:'Genome-Thin';font-size:30pt;margin-left:150px;margin-top: 80px;">Learn More</button>
+
+	<!--자바스크립트-->
 	<script type="text/javascript">
-		function button1_click()
+		function NotYet()
 		{
 			alert("아직 준비되지 않은 기능입니다")
+		}
+
+		function showMore_click()
+		{
+			NotYet()
+
 			var easter = prompt("코드 입력 : ")
-			if(easter = "sww")
+			if(easter == "sww")
 			{
 				alert("이스터에그를 발견하셨습니다!")
 				location.href="https://www.nbg.kro.kr"
+			} else {
+				alert("'"+ easter +"'"+" (은)는 없는 코드입니다.")
 			}
+		}
+
+		function login_click()
+		{
+			location.href="login/login.html"
 		}
 
 		function topclick()
 		{
-			alert("아직 준비되지 않은 기능입니다")
+			NotYet()
 		}
 	</script>
 </body>

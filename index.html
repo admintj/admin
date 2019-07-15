@@ -83,12 +83,37 @@
 			font-size: 24pt;
 		}
 	</style>
+
+	<script type="text/javascript">
+		function getCookie(name){    
+			var wcname = name + '=';
+			var wcstart, wcend, end;
+			var i = 0;   
+
+			  while(i <= document.cookie.length) {            
+			   		wcstart = i;  
+					wcend   = (i + wcname.length);            
+			 if(document.cookie.substring(wcstart, wcend) == wcname) {                    
+			  if((end = document.cookie.indexOf(';', wcend)) == -1)                           
+			   end = document.cookie.length;                    
+			  return document.cookie.substring(wcend, end);            
+			   }           
+
+			 i = document.cookie.indexOf('', i) + 1;            
+			  
+			   if(i == 0)                    
+			  break;    
+			  }    
+			  return '';
+			}
+
+			if(getCookie('blogWebCafe') != 'rangs') {       
+			 window.open('popUp/onedayPop.html','','width=300,height=300,top=0,left=0');
+			}
+	</script>
 </head>
 
 <body>
-	<script type="text/javascript">
-		alert("Chrome을 권장합니다\n익스플로러에서는 폰트가 깨질 수 있습니다")
-	</script>
 	<div class="listBox">
 		<header>
 			<nav>

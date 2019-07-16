@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<!--제목-->
 	<title>Login</title>
 	<!--웹 로고-->
@@ -12,11 +13,6 @@
 	<!--CSS-->
 	<style type="text/css">
 
-		@font-face {
-			font-family: 'NaNumLight';
-			src: url(../font/NaNumLight.ttf) format('truetype');
-		}
-
 		@font-face { 
 			font-family: 'Pacifico-Regular'; 
 			src: url(../font/Pacifico-Regular.ttf) format('truetype'); 
@@ -24,12 +20,19 @@
 
 		@font-face { 
 			font-family: 'Genome-Thin'; 
-			src: url(../font/Genome-Thin.otf) format('truetype'); 
+			src: url(../font/Genome-Thin.ttf) format('truetype');
+			src: url('../font/genome-thin-webfont.woff2') format('woff2'),url('../font/genome-thin-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
 		}
 
 		@font-face { 
 			font-family: 'NaNumDef'; 
-			src: url(../font/NaNumDef.ttf) format('truetype'); 
+			src: url(../font/NaNumDef.ttf) format('truetype');
+			src: url(../font/nanumdef-webfont.woff2) format('woff2'),
+        	url(../font/nanumdef-webfont.woff) format('woff');
+		    font-weight: normal;
+		    font-style: normal;
 		}
 
 		body {
@@ -74,7 +77,7 @@
 
 		.labelTxt {
 			font-size: 20pt;
-			font-family: 'NaNumLight';
+			font-family: 'NaNumDef';
 		}
 
 		.loginDiv {
@@ -98,10 +101,6 @@
 			text-align: right;
 		}
 
-		.returnBtn:hover {
-			cursor: pointer;
-		}
-
 	</style>
 </head>
 
@@ -114,21 +113,14 @@
 					<table class="tableLogin" border="0">
 						<tr><td class="input_align"><input type="text" name='id' placeholder="아이디" class="form-control"style="font-family:'NaNumDef';font-size:17pt;height:80px;margin-bottom:20px;"></td></tr>
 						<tr><td class="input_align"><input type="password" name='pw' placeholder="비밀번호" class="form-control" style="font-family:'NaNumDef';font-size:17pt;height:80px;"></td></tr>
-						<tr><td><input type="submit" class="btn btn-info" value="LOGIN" style="font-family:'NaNumLight'; font-size:25pt; width:95%; height: 80px; margin-top:20px;"></td></tr>
+						<tr><td><input type="submit" class="btn btn-info" value="LOGIN" style="font-family:'NaNumDef'; font-size:25pt; width:95%; height: 80px; margin-top:20px;"></td></tr>
 					</table>
 
 					<div class="returnBtn">
-						<img src="../image/login/home.png" width="40px" height="40px" onclick="returnHome()">
+						<a href="../index.html"><img src="../image/login/home.png" width="40px" height="40px"></a>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-
-	<script type="text/javascript">
-		function returnHome()
-		{
-			location.href="../index.html"
-		}
-	</script>
 </html>

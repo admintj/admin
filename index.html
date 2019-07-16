@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<!--제목-->
 	<title>NEWBIES!</title>
 	<!--웹 로고-->
@@ -11,11 +12,6 @@
 	<!--CSS-->
 	<style type="text/css">
 
-		@font-face {
-			font-family: 'NaNumLight';
-			src: url(font/NaNumLight.ttf) format('truetype');
-		}
-
 		@font-face { 
 			font-family: 'Pacifico-Regular'; 
 			src: url(font/Pacifico-Regular.ttf) format('truetype'); 
@@ -23,12 +19,28 @@
 
 		@font-face { 
 			font-family: 'Genome-Thin'; 
-			src: url(font/Genome-Thin.otf) format('truetype'); 
+			src: url(font/Genome-Thin.ttf) format('truetype');
+			src: url('font/genome-thin-webfont.woff2') format('woff2'),url('font/genome-thin-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
 		}
 
 		@font-face { 
 			font-family: 'NaNumDef'; 
-			src: url(../font/NaNumDef.ttf) format('truetype'); 
+			src: url(font/NaNumDef.ttf) format('truetype');
+			src: url(font/nanumdef-webfont.woff2) format('woff2'),
+        	url(font/nanumdef-webfont.woff) format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		@font-face { 
+			font-family: 'NaNumLight'; 
+			src: url(font/NaNumLight.ttf) format('truetype');
+			src: url(font/NaNumlight-webfont.woff2) format('woff2'),
+        	url(font/NaNumlight-webfont.woff) format('woff');
+		    font-weight: normal;
+		    font-style: normal;
 		}
 		
 		body {

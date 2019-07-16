@@ -84,33 +84,6 @@
 		}
 	</style>
 
-	<script type="text/javascript">
-		function getCookie(name){    
-			var wcname = name + '=';
-			var wcstart, wcend, end;
-			var i = 0;   
-
-			  while(i <= document.cookie.length) {            
-			   		wcstart = i;  
-					wcend   = (i + wcname.length);            
-			 if(document.cookie.substring(wcstart, wcend) == wcname) {                    
-			  if((end = document.cookie.indexOf(';', wcend)) == -1)                           
-			   end = document.cookie.length;                    
-			  return document.cookie.substring(wcend, end);            
-			   }           
-
-			 i = document.cookie.indexOf('', i) + 1;            
-			  
-			   if(i == 0)                    
-			  break;    
-			  }    
-			  return '';
-			}
-
-			if(getCookie('blogWebCafe') != 'rangs') {       
-			 window.open('popUp/onedayPop.html','','width=300,height=300,top=0,left=0');
-			}
-	</script>
 </head>
 
 <body>

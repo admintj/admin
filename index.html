@@ -27,57 +27,75 @@
 		    font-style: normal;
 		}
 		
-		body {
-			background-image: url('image/main/main_bg.jpg');
-			background-repeat: no-repeat;
-			background-size: 100%;
-			background-position: top;
-			overflow: hidden;
+		@media screen and (min-width: 1000px){
+			body {
+				background-image: url('image/main/main_bg.jpg');
+				background-repeat: no-repeat;
+				background-size: 100%;
+				background-position: top;
+				overflow: hidden;
+			}
+
+			.maintxt1 {
+				font-family: 'Genome-Thin';
+				color: black;
+				font-size: 130pt;
+				text-align: left;
+				margin-left: 40px;
+				margin-top: 70px;
+			}
+
+			.maintxt2 {
+				font-family: 'NanumBarunGothic', sans-serif;
+				color: black;
+				font-size: 110pt;
+				text-align: left;
+				margin-left: 100px;
+				margin-top: 40px;
+				font-weight: lighter;
+			}
+
+			.listBox {
+				font-family: 'Pacifico-Regular';
+				text-align: center;
+				font-size: 17pt;
+				margin-top: 20px;
+				margin-left: 3%;
+				margin-right: 3%;
+				width: auto;
+				height: 60px;
+			}
+
+			.header {
+				table-layout: fixed;
+				width: 100%;
+				text-align: center;
+			}
+
+			.headTag {
+				text-decoration-line: none !important;
+				color: black !important;
+			}
+
+			td:hover{
+				font-size: 24pt;
+			}
 		}
 
-		.maintxt1 {
-			font-family: 'Genome-Thin';
-			color: black;
-			font-size: 130pt;
-			text-align: left;
-			margin-left: 40px;
-			margin-top: 70px;
-		}
-
-		.maintxt2 {
-			font-family: 'NanumBarunGothic', sans-serif;
-			color: black;
-			font-size: 110pt;
-			text-align: left;
-			margin-left: 100px;
-			margin-top: 40px;
-			font-weight: lighter;
-		}
-
-		.listBox {
-			font-family: 'Pacifico-Regular';
-			text-align: center;
-			font-size: 17pt;
-			margin-top: 20px;
-			margin-left: 3%;
-			margin-right: 3%;
-			width: auto;
-			height: 60px;
-		}
-
-		.header {
-			table-layout: fixed;
-			width: 100%;
-			text-align: center;
-		}
-
-		.headTag {
-			text-decoration-line: none !important;
-			color: black !important;
-		}
-
-		td:hover{
-			font-size: 24pt;
+		@media screen and (max-width: 1000px) {
+			.headTag, .btn-tag{
+				visibility: hidden;
+			}
+			.mobile{
+				margin: 30%;
+				display: block;
+				padding: 0;
+				width: 3em;
+				height: 3em;
+				font-size: 10em;
+				width:200px;
+				height: 200px;
+			}
 		}
 	</style>
 
@@ -89,12 +107,13 @@
 			<nav>
 				<table class="header">
 					<tr>
+						<td><button class="mobile">=</button></td>
 						<td height="60"><a href="#" class="headTag" onclick="topclick();">About</a></td>
 						<td>			<a href="#" class="headTag" onclick="topclick();">School</a></td>
 						<td>			<a href="#" class="headTag" onclick="topclick();">Notice</a></td>
 						<td>			<a href="board/index.html" class="headTag"">Tips</a></td>
 						<td>			<a href="dev/index.html" class="headTag" onclick="">Devs</a></td>
-						<td>			<button type="button" onclick="login_click();" class="btn btn-warning" style="font-family:'Genome-Thin';font-size:20pt;">Login</button></td>
+						<td>			<button type="button" onclick="login_click();" class="btn-tag btn btn-warning" style="font-family:'Genome-Thin';font-size:20pt;">Login</button></td>
 					</tr>
 				</table>
 			</nav>
